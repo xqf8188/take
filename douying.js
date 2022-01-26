@@ -121,7 +121,7 @@ let douyinbxhd = $.getdata('douyinbxhd')
 
 //获取ck
 function douyinck() {
-    if ($request.url.indexOf("excitation_ad") > -1) {
+  \* if ($request.url.indexOf("excitation_ad") > -1) {
         const douyinurl = $request.url
         if (douyinurl) $.setdata(douyinurl, `douyinurl${status}`)
         $.log(douyinurl)
@@ -136,8 +136,8 @@ function douyinck() {
 
         $.msg($.name, "", `抖音${status}获取douyinhd成功`)
 
-    }    
- /*  if ($request.url.indexOf("excitation_ad_treasure_box") > -1) {
+    }    *\
+   if ($request.url.indexOf("excitation_ad_treasure_box") > -1) {
         const douyinbxurl = $request.url
         if (douyinbxurl) $.setdata(douyinbxurl, `douyinbxurl${status}`)
         $.log(douyinbxurl)
@@ -152,7 +152,7 @@ function douyinck() {
 
         $.msg($.name, "", `抖音${status}获取douyinbxhd成功`)
 
-    }*/
+    }
 }
          
 
